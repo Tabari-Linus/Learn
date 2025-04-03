@@ -9,5 +9,9 @@ public class Advancetask {
         int score = input.nextInt();
         
         System.out.println("The square of "+score +" is "+score * score);
+   
+        System.out.println("Enter a message: ");
+        String message = input.nextLine();
+        System.out.println(message)
     }
 }
