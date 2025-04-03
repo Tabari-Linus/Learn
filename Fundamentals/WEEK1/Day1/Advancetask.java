@@ -12,6 +12,6 @@ public class Advancetask {
    
         System.out.println("Enter a message: ");
         String message = input.nextLine();
-        System.out.println(message)
+        System.out.println(message);
     }
 }
