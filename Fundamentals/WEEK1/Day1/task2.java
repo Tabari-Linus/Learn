@@ -1,6 +1,6 @@
 package Day1;
 
-public class task2 {
+public class Task2 {
     public static void main(String[] args) {
         int age = 18;
         double score1 = 93.6;
