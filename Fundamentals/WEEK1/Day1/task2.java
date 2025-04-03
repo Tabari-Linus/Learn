@@ -14,5 +14,8 @@ public class task2 {
         if(age % 2 ==0){
             System.out.println(age+": Age is even");
         }
+        else{
+            System.out.println("It's odd");
+        }
     }
 }
