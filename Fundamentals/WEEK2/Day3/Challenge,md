@@ -1,0 +1,32 @@
+**Challenge: Understanding Polymorphism in Java**
+
+**Task:**
+
+Write a Java program that demonstrates **both compile-time and runtime polymorphism** using real-world examples.
+
+**Part 1: Compile-time Polymorphism (Method Overloading)**
+
+- **Create a Calculator class** that contains overloaded methods for addition:
+    - add(int a, int b): Returns the sum of two integers.
+    - add(double a, double b): Returns the sum of two doubles.
+    - add(int a, int b, int c): Returns the sum of three integers.
+- **In the main method**, create an instance of Calculator and demonstrate method overloading by calling different add() methods.
+
+**Part 2: Runtime Polymorphism (Method Overriding)**
+
+- **Create a Animal class** with:
+    - A method makeSound() that prints "Animal makes a sound".
+- **Create a Dog class** that extends Animal:
+    - Override makeSound() to print "Dog barks".
+- **Create a Cat class** that extends Animal:
+    - Override makeSound() to print "Cat meows".
+- **In the main method:**
+    - Create an Animal reference but assign it a Dog object.
+    - Call makeSound() and observe that Java dynamically binds the method at runtime (dynamic method dispatch).
+    - Repeat the process for a Cat object.
+
+**Expected Learning Outcomes:**
+
+- Understand **compile-time polymorphism** through method overloading.
+- Learn **runtime polymorphism** through method overriding and dynamic method dispatch.
+- See how polymorphism **improves code flexibility and maintainability** by allowing a common interface for different object types.
