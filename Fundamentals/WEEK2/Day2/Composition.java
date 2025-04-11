@@ -1,5 +1,5 @@
 
-public class ConpositeNAggregate {
+public class Composition {
 
     public static void main(String[] args) {
         Car car = new Car(150);
