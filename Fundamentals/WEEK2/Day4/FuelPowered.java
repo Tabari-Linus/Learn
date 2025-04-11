@@ -1,0 +1,5 @@
+
+interface FuelPowered {
+
+    void refuel();
+}
