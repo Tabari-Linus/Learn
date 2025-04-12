@@ -1,5 +1,5 @@
 
-class Bike extends Vehicle {
+class Bike extends Vehicle implements FuelPowered{
 
     private int gearCount;
 
@@ -11,6 +11,11 @@ class Bike extends Vehicle {
     @Override
     void move() {
         System.out.println("Bikes can move on two wheels.");
+    }
+
+    @Override
+    public void refuel(){
+        System.out.println( "Bike is refueling.");
     }
 
 }

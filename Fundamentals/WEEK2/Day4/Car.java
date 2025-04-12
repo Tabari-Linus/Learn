@@ -1,5 +1,5 @@
 
-class Car extends Vehicle {
+class Car extends Vehicle implements FuelPowered {
 
     private String model;
     private int year;

@@ -1,5 +1,5 @@
 
-abstract class Vehicle implements FuelPowered {
+abstract class Vehicle {
 
     String name;
 
