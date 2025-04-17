@@ -66,6 +66,6 @@ public class IteratorsInterface {
         System.out.println("--------------");
         System.out.println("Most Active: " + mostActive);
 
->>>>>>> 174ed8bf0741a9e63679246af55d461db4224e8f
+
     }
 }

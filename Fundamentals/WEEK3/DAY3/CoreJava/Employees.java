@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-import java.time.LocalDate;
-=======
-
->>>>>>> 174ed8bf0741a9e63679246af55d461db4224e8f
 import java.time.Year;
 
 public class Employees {
@@ -11,32 +6,17 @@ public class Employees {
     private String empFirstName;
     private String empLastName;
     private Double salary;
-<<<<<<< HEAD
-    private Year lastActiveYear;
-
-
-    Employees(String empID, String empFirstName, String empLastName, Double salary, Year lastActiveYear){
-=======
     private Year lastActive;
 
+
     Employees(String empID, String empFirstName, String empLastName, Double salary, Year lastActive) {
->>>>>>> 174ed8bf0741a9e63679246af55d461db4224e8f
         this.empID = empID;
         this.empFirstName = empFirstName;
         this.empLastName = empLastName;
         this.salary = salary;
-        this.lastActiveYear = lastActiveYear;
+        this.lastActive = lastActive;
     }
 
-<<<<<<< HEAD
-
-
-    public Employees(String empID2, String empFirstName2, String empLastName2, int salary2) {
-        //TODO Auto-generated constructor stub
-    }
-
-
-=======
     Employees(String empID, String empFirstName, String empLastName, Double salary) {
         this.empID = empID;
         this.empFirstName = empFirstName;
@@ -84,6 +64,4 @@ public class Employees {
     public void setLastActive(Year lastActive) {
         this.lastActive = lastActive;
     }
->>>>>>> 174ed8bf0741a9e63679246af55d461db4224e8f
-
 }
