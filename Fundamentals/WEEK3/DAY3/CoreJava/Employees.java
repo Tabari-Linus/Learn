@@ -1,4 +1,5 @@
 import java.time.LocalDate;
+import java.time.Year;
 
 public class Employees {
     
@@ -6,23 +7,23 @@ public class Employees {
     private String empFirstName;
     private String empLastName;
     private Double salary;
-    private LocalDate lastActive;
+    private Year lastActiveYear;
 
 
-    Employees(String empID, String empFirstName, String empLastName, Double salary, LocalDate lastActive){
+    Employees(String empID, String empFirstName, String empLastName, Double salary, Year lastActiveYear){
         this.empID = empID;
         this.empFirstName = empFirstName;
         this.empLastName = empLastName;
         this.salary = salary;
-        this.lastActive = lastActive;
+        this.lastActiveYear = lastActiveYear;
     }
 
 
-    Employees(String empID, String empFirstName, String empLastName, Double salary){
-        this.empID = empID;
-        this.empFirstName = empFirstName;
-        this.empLastName = empLastName;
-        this.salary = salary;
-        this.lastActive = LocalDate.now();
+
+    public Employees(String empID2, String empFirstName2, String empLastName2, int salary2) {
+        //TODO Auto-generated constructor stub
     }
+
+
+
 }
