@@ -18,11 +18,12 @@ public class BankAccount {
     }
 
     public void deposit(double amount) {
-        if (amount > 0) {
-            balance += amount;
-        } else {
-            System.out.println("Deposit amount must be positive.");
+        if (amount <= 0) {
+            throw new IllegalArgumentException("Deposit amount must be positive or more than zero.");
         }
+
+        balance += amount;
+
     }
 
     public void withdraw(double amount) {
@@ -36,10 +37,12 @@ public class BankAccount {
         System.out.println("Account Number: " + account.getAccountNumber());
 
         try {
-            account.deposit(200.0);
+            account.deposit(0.0);
             account.withdraw(800.0); // This will throw InsufficientFundsException
         } catch (InsufficientFundsException | IllegalArgumentException e) {
             System.out.println("Error: " + e.getMessage());
+        } finally {
+            System.out.println("Transaction completed.");
         }
     }
 
