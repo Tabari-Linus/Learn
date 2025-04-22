@@ -30,6 +30,7 @@ public class BankAccount {
         if (amount > balance) {
             throw new InsufficientFundsException("Insufficient funds for withdrawal.");
         }
+        balance -= amount;
     }
 
     public static void main(String[] args) {
