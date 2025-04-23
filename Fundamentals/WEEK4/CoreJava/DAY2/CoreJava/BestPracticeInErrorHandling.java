@@ -1,10 +1,15 @@
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class BestPracticeInErrorHandling {
 
     public static void main(String[] args) {
+
+        final Logger logger = Logger.getLogger(BestPracticeInErrorHandling.class.getName());
+
         // Example usage
         EmployeeService employeeService = new EmployeeService();
         Map<String, Employee> employeeMap = new HashMap<>();
@@ -15,20 +20,16 @@ public class BestPracticeInErrorHandling {
 
             // Attempt to retrieve an employee that doesn't exist
             employeeService.getEmployeeById("2", employeeMap);
-        } catch (EmployeeNotFoundException e) {
-
-            System.out.println(e.getMessage());
-            e.printStackTrace();
-        } catch (IllegalArgumentException e) {
-            System.out.println(e.getMessage());
+        } catch (RuntimeException e) {
+            logger.log(Level.SEVERE, "Extra runtime uncheked exception: " + e.getMessage(), e);
         }
         try {
             // Attempt to update salary with a negative value
             employeeService.updateSalary("1", -1000, employeeMap);
-        } catch (EmployeeNotFoundException e) {
-            System.out.println(e.getMessage());
         } catch (IllegalArgumentException e) {
             System.out.println(e.getMessage());
+        } catch (RuntimeException e) {
+            logger.log(Level.SEVERE, "Extra runtime uncheked exception: " + e.getMessage(), e);
         }
 
     }
