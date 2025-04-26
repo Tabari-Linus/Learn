@@ -12,7 +12,7 @@ public class RegexPatthernLookAHead {
         Matcher matcher = pattern.matcher(text);
 
         while (matcher.find()) {
-            System.out.println("Found: " + matcher.group());
+            System.out.println("Found: 0" + matcher.group());
         }
     }
 }
