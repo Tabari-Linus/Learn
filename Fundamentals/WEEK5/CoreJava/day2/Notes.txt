@@ -1,0 +1,5 @@
+ Understand file handling in Java using FileReader, BufferedReader, FileWriter, and BufferedWriter.
+ Read text data from files using FileReader and BufferedReader.
+ Write text data to files using FileWriter and BufferedWriter.
+ Differentiate between character-based and buffered I/O operations.
+ Handle exceptions properly when working with file operations.

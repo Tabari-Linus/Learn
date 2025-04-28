@@ -1,0 +1,5 @@
+Welcome to Java Programming!
+This week we are learning about File Handling.
+We are writing to a file using BufferedWriter.Welcome to Java Programming!
+This week we are learning about File Handling.
+We are writing to a file using BufferedWriter 1.
